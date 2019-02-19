@@ -1,0 +1,16 @@
+C:\Users\sroldan\Desktop\backup\Timelogs\Timelogs\Infra\bin\Debug\netcoreapp2.2\Infra.deps.json
+C:\Users\sroldan\Desktop\backup\Timelogs\Timelogs\Infra\bin\Debug\netcoreapp2.2\Infra.runtimeconfig.json
+C:\Users\sroldan\Desktop\backup\Timelogs\Timelogs\Infra\bin\Debug\netcoreapp2.2\Infra.runtimeconfig.dev.json
+C:\Users\sroldan\Desktop\backup\Timelogs\Timelogs\Infra\bin\Debug\netcoreapp2.2\Infra.dll
+C:\Users\sroldan\Desktop\backup\Timelogs\Timelogs\Infra\bin\Debug\netcoreapp2.2\Infra.pdb
+C:\Users\sroldan\Desktop\backup\Timelogs\Timelogs\Infra\bin\Debug\netcoreapp2.2\Domain.dll
+C:\Users\sroldan\Desktop\backup\Timelogs\Timelogs\Infra\bin\Debug\netcoreapp2.2\Domain.Models.dll
+C:\Users\sroldan\Desktop\backup\Timelogs\Timelogs\Infra\bin\Debug\netcoreapp2.2\Domain.pdb
+C:\Users\sroldan\Desktop\backup\Timelogs\Timelogs\Infra\bin\Debug\netcoreapp2.2\Domain.Models.pdb
+C:\Users\sroldan\Desktop\backup\Timelogs\Timelogs\Infra\obj\Debug\netcoreapp2.2\Infra.csprojAssemblyReference.cache
+C:\Users\sroldan\Desktop\backup\Timelogs\Timelogs\Infra\obj\Debug\netcoreapp2.2\Infra.csproj.CoreCompileInputs.cache
+C:\Users\sroldan\Desktop\backup\Timelogs\Timelogs\Infra\obj\Debug\netcoreapp2.2\Infra.AssemblyInfoInputs.cache
+C:\Users\sroldan\Desktop\backup\Timelogs\Timelogs\Infra\obj\Debug\netcoreapp2.2\Infra.AssemblyInfo.cs
+C:\Users\sroldan\Desktop\backup\Timelogs\Timelogs\Infra\obj\Debug\netcoreapp2.2\Infra.csproj.CopyComplete
+C:\Users\sroldan\Desktop\backup\Timelogs\Timelogs\Infra\obj\Debug\netcoreapp2.2\Infra.dll
+C:\Users\sroldan\Desktop\backup\Timelogs\Timelogs\Infra\obj\Debug\netcoreapp2.2\Infra.pdb

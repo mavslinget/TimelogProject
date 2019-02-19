@@ -1,0 +1,13 @@
+C:\Users\sroldan\Desktop\backup\Timelogs\Timelogs\Timelogs\bin\Debug\netcoreapp2.1\Domain.dll
+C:\Users\sroldan\Desktop\backup\Timelogs\Timelogs\Timelogs\bin\Debug\netcoreapp2.1\Domain.Models.dll
+C:\Users\sroldan\Desktop\backup\Timelogs\Timelogs\Timelogs\bin\Debug\netcoreapp2.1\Infra.dll
+C:\Users\sroldan\Desktop\backup\Timelogs\Timelogs\Timelogs\obj\Debug\netcoreapp2.1\Timelogs.csprojAssemblyReference.cache
+C:\Users\sroldan\Desktop\backup\Timelogs\Timelogs\Timelogs\obj\Debug\netcoreapp2.1\Timelogs.csproj.CoreCompileInputs.cache
+C:\Users\sroldan\Desktop\backup\Timelogs\Timelogs\Timelogs\obj\Debug\netcoreapp2.1\Timelogs.RazorAssemblyInfo.cache
+C:\Users\sroldan\Desktop\backup\Timelogs\Timelogs\Timelogs\obj\Debug\netcoreapp2.1\Timelogs.RazorAssemblyInfo.cs
+C:\Users\sroldan\Desktop\backup\Timelogs\Timelogs\Timelogs\obj\Debug\netcoreapp2.1\Timelogs.AssemblyInfoInputs.cache
+C:\Users\sroldan\Desktop\backup\Timelogs\Timelogs\Timelogs\obj\Debug\netcoreapp2.1\Timelogs.AssemblyInfo.cs
+C:\Users\sroldan\Desktop\backup\Timelogs\Timelogs\Timelogs\obj\Debug\netcoreapp2.1\Timelogs.RazorTargetAssemblyInfo.cache
+C:\Users\sroldan\Desktop\backup\Timelogs\Timelogs\Timelogs\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
+C:\Users\sroldan\Desktop\backup\Timelogs\Timelogs\Timelogs\bin\Debug\netcoreapp2.1\Domain.pdb
+C:\Users\sroldan\Desktop\backup\Timelogs\Timelogs\Timelogs\bin\Debug\netcoreapp2.1\Domain.Models.pdb
