@@ -7,3 +7,12 @@ C:\Users\sroldan\Desktop\backup\Timelogs\Timelogs\Domain.Models\obj\Debug\netcor
 C:\Users\sroldan\Desktop\backup\Timelogs\Timelogs\Domain.Models\obj\Debug\netcoreapp2.2\Domain.Models.AssemblyInfo.cs
 C:\Users\sroldan\Desktop\backup\Timelogs\Timelogs\Domain.Models\obj\Debug\netcoreapp2.2\Domain.Models.dll
 C:\Users\sroldan\Desktop\backup\Timelogs\Timelogs\Domain.Models\obj\Debug\netcoreapp2.2\Domain.Models.pdb
+D:\TimelogProject\Timelogs\Domain.Models\bin\Debug\netcoreapp2.2\Domain.Models.deps.json
+D:\TimelogProject\Timelogs\Domain.Models\bin\Debug\netcoreapp2.2\Domain.Models.dll
+D:\TimelogProject\Timelogs\Domain.Models\bin\Debug\netcoreapp2.2\Domain.Models.pdb
+D:\TimelogProject\Timelogs\Domain.Models\obj\Debug\netcoreapp2.2\Domain.Models.csprojAssemblyReference.cache
+D:\TimelogProject\Timelogs\Domain.Models\obj\Debug\netcoreapp2.2\Domain.Models.csproj.CoreCompileInputs.cache
+D:\TimelogProject\Timelogs\Domain.Models\obj\Debug\netcoreapp2.2\Domain.Models.AssemblyInfoInputs.cache
+D:\TimelogProject\Timelogs\Domain.Models\obj\Debug\netcoreapp2.2\Domain.Models.AssemblyInfo.cs
+D:\TimelogProject\Timelogs\Domain.Models\obj\Debug\netcoreapp2.2\Domain.Models.dll
+D:\TimelogProject\Timelogs\Domain.Models\obj\Debug\netcoreapp2.2\Domain.Models.pdb

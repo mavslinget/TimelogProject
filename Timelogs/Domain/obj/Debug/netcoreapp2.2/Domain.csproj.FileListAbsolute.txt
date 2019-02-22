@@ -10,3 +10,15 @@ C:\Users\sroldan\Desktop\backup\Timelogs\Timelogs\Domain\obj\Debug\netcoreapp2.2
 C:\Users\sroldan\Desktop\backup\Timelogs\Timelogs\Domain\obj\Debug\netcoreapp2.2\Domain.csproj.CopyComplete
 C:\Users\sroldan\Desktop\backup\Timelogs\Timelogs\Domain\obj\Debug\netcoreapp2.2\Domain.dll
 C:\Users\sroldan\Desktop\backup\Timelogs\Timelogs\Domain\obj\Debug\netcoreapp2.2\Domain.pdb
+D:\TimelogProject\Timelogs\Domain\bin\Debug\netcoreapp2.2\Domain.deps.json
+D:\TimelogProject\Timelogs\Domain\bin\Debug\netcoreapp2.2\Domain.dll
+D:\TimelogProject\Timelogs\Domain\bin\Debug\netcoreapp2.2\Domain.pdb
+D:\TimelogProject\Timelogs\Domain\bin\Debug\netcoreapp2.2\Domain.Models.dll
+D:\TimelogProject\Timelogs\Domain\bin\Debug\netcoreapp2.2\Domain.Models.pdb
+D:\TimelogProject\Timelogs\Domain\obj\Debug\netcoreapp2.2\Domain.csprojAssemblyReference.cache
+D:\TimelogProject\Timelogs\Domain\obj\Debug\netcoreapp2.2\Domain.csproj.CoreCompileInputs.cache
+D:\TimelogProject\Timelogs\Domain\obj\Debug\netcoreapp2.2\Domain.AssemblyInfoInputs.cache
+D:\TimelogProject\Timelogs\Domain\obj\Debug\netcoreapp2.2\Domain.AssemblyInfo.cs
+D:\TimelogProject\Timelogs\Domain\obj\Debug\netcoreapp2.2\Domain.csproj.CopyComplete
+D:\TimelogProject\Timelogs\Domain\obj\Debug\netcoreapp2.2\Domain.dll
+D:\TimelogProject\Timelogs\Domain\obj\Debug\netcoreapp2.2\Domain.pdb

@@ -6,7 +6,7 @@
 
 
 <form class="basic-form">
-  <div fxLayout="row" fxLayoutWrap="wrap" fxLayoutAlign="space-between">
+  <div fxLayout="row" fxLayoutWrap="wrap" fxLayoutAlign="space-around">
     <div fxFlex.gt-md="30" fxFlex="30" m-r-15>
       <mat-form-field>
         <mat-select placeholder="Department">
@@ -31,7 +31,7 @@
   </div>
 
 
-  <div fxLayout="row" fxLayoutWrap="wrap" fxLayoutAlign="space-between">
+  <div fxLayout="row" fxLayoutWrap="wrap" fxLayoutAlign="space-around">
     <div fxFlex.gt-md="30" fxFlex="30" m-r-15>
       <mat-form-field>
         <input matInput placeholder="Search:">
@@ -62,26 +62,26 @@
 
             <!-- Name Column -->
             <ng-container matColumnDef="name">
-              <mat-header-cell *matHeaderCellDef mat-sort-header> Name </mat-header-cell>
-              <mat-cell *matCellDef="let row"> {{name}} </mat-cell>
+              <mat-header-cell *matHeaderCellDef> Name </mat-header-cell>
+              <mat-cell *matCellDef="let row"> {{ Emplloyee?.fullName }} </mat-cell>
             </ng-container>
 
             <!-- Hours Rendered Column -->
             <ng-container matColumnDef="hoursRendered">
-              <mat-header-cell *matHeaderCellDef mat-sort-header> Hours Rendered </mat-header-cell>
-              <mat-cell *matCellDef="let row"> {{hoursRendered}} </mat-cell>
+              <mat-header-cell *matHeaderCellDef> Hours Rendered </mat-header-cell>
+              <mat-cell *matCellDef="let row"> {{ Timelog?.time | date:'h:mm:ss a' }} </mat-cell>
             </ng-container>
 
             <!-- Unreported Hours Column -->
             <ng-container matColumnDef="unreportedHours">
-              <mat-header-cell *matHeaderCellDef mat-sort-header> Unreported Hours </mat-header-cell>
-              <mat-cell *matCellDef="let row"> {{unreportedHours}} </mat-cell>
+              <mat-header-cell *matHeaderCellDef> Unreported Hours </mat-header-cell>
+              <mat-cell *matCellDef="let row"> {{ Employee?.firstName }} </mat-cell>
             </ng-container>
 
-            <!-- Gain /month Column -->
+            <!-- Department Column -->
             <ng-container matColumnDef="department">
-              <mat-header-cell *matHeaderCellDef mat-sort-header> Department </mat-header-cell>
-              <mat-cell *matCellDef="let row"> {{department}} </mat-cell>
+              <mat-header-cell *matHeaderCellDef> Department </mat-header-cell>
+              <mat-cell *matCellDef="let row"> {{ Department?.departmentName }} </mat-cell>
             </ng-container>
 
             <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>

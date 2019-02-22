@@ -31,7 +31,7 @@ namespace Timelogs
         {
 
             var settings = Configuration.GetSection("TimelogSettings").Get<TimelogSettings>();
-            services.AddSingleton(settings);
+            //services.AddSingleton(settings);
 
             services.AddDbContext<TimelogDBContext>(options =>
             {
@@ -44,7 +44,8 @@ namespace Timelogs
             });
             services.AddTransient<IEmployeeRepository, EmployeeRepository>();
             services.AddTransient<IDepartmentRepository, DepartmentRepository>();
-            services.AddTransient<ITimelogRepository, TimelogRepository>();
+            services.AddTransient<ITimelogRepository, TimelogSumamryRepository>();
+            services.AddTransient<ITimelogSummaryRepository, TimelogSummaryRepository>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 

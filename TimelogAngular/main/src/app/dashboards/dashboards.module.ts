@@ -23,6 +23,7 @@ import { TimelogSummaryDetailsComponent } from './timelog-summary/timelog-summar
     ChartsModule,
     RouterModule.forChild(DashboardsRoutes)
   ],
+  providers: [],
   declarations: [Dashboard1Component, Dashboard2Component, TimelogSummaryComponent, TimelogSummaryDetailsComponent]
 })
 export class DashboardsModule {}

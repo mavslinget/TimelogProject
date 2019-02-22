@@ -12,6 +12,8 @@ namespace Infra
         public DbSet<Departments> Department { get; set; }
         public DbSet<Timelog> Timelog { get; set; }
 
+        public DbSet<TimelogSummary> TimelogSummary { get; set; }
+
 
         public TimelogDBContext(DbContextOptions<TimelogDBContext> options) : base(options)
         {

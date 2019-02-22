@@ -7,9 +7,9 @@ using System.Text;
 
 namespace Infra
 {
-    public class TimelogRepository : RepositoryBase<Timelog>, ITimelogRepository
+    public class TimelogSumamryRepository : RepositoryBase<Timelog>, ITimelogRepository
     {
-        public TimelogRepository(TimelogDBContext context) : base(context)
+        public TimelogSumamryRepository(TimelogDBContext context) : base(context)
         {
 
         }

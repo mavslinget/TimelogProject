@@ -23,9 +23,9 @@
                 <!-- Logo text -->
                 <span fxShow="false" fxShow.gt-xs>
                     <!-- dark Logo text -->
-                    <img src="assets/images/logo-text.png" alt="homepage" class="dark-logo">
+                    <!-- <img src="assets/images/logo-text.png" alt="homepage" class="dark-logo"> -->
                     <!-- Light Logo text -->
-                    <img src="assets/images/logo-light-text.png" class="light-logo" alt="homepage">
+                    <!-- <img src="assets/images/logo-light-text.png" class="light-logo" alt="homepage"> -->
                 </span>
             </a>
         </div>
@@ -33,13 +33,13 @@
         <!-- sidebar toggle -->
         <!-- ============================================================== -->
 
-        <button mat-icon-button (click)="snav.toggle()" value="sidebarclosed">
+        <!-- <button mat-icon-button (click)="snav.toggle()" value="sidebarclosed">
             <mat-icon>menu</mat-icon>
-        </button>
+        </button> -->
         <!-- ============================================================== -->
         <!-- Search - style you can find in header.scss -->
         <!-- ============================================================== -->
-        <button mat-icon-button class="srh-btn">
+        <!-- <button mat-icon-button class="srh-btn">
             <mat-icon>search</mat-icon>
         </button>
         <form class="app-search">
@@ -48,17 +48,17 @@
                 <i class="ti-close"></i>
             </a>
         </form>
-        <span fxFlex></span>
+        <span fxFlex></span> -->
         <!-- ============================================================== -->
         <!-- app header component - style you can find in header.scss / header.component.ts-->
         <!-- ============================================================== -->
-        <app-header></app-header>
+        <!-- <app-header></app-header> -->
         <!-- ============================================================== -->
         <!-- Right sidebar toggle - style you can find in rightsidebar.component.scss -->
         <!-- ============================================================== -->
-        <button (click)="end.toggle()" mat-icon-button class="ml-xs overflow-visible">
+        <!-- <button (click)="end.toggle()" mat-icon-button class="ml-xs overflow-visible">
             <mat-icon>settings</mat-icon>
-        </button>
+        </button> -->
     </mat-toolbar>
     <!-- ============================================================== -->
     <!-- End Topbar - style you can find in pages.scss -->
@@ -67,20 +67,20 @@
         <!-- ============================================================== -->
         <!-- Sidebar - style you can find in sidebar.scss -->
         <!-- ============================================================== -->
-        <mat-sidenav #snav id="snav" class="pl-xs" [mode]="mobileQuery.matches ? 'side' : 'over'" fixedTopGap="0" [opened]="mobileQuery.matches"
-            [disableClose]="mobileQuery.matches" (open)="sidebarOpened = true" (close)="sidebarOpened = false" [perfectScrollbar]="config">
+        <!-- <mat-sidenav #snav id="snav" class="pl-xs" [mode]="mobileQuery.matches ? 'side' : 'over'" fixedTopGap="0" [opened]="mobileQuery.matches"
+            [disableClose]="mobileQuery.matches" (open)="sidebarOpened = false" (close)="sidebarOpened = false" [perfectScrollbar]="config">
 
             <app-sidebar></app-sidebar>
 
 
-        </mat-sidenav>
+        </mat-sidenav> -->
         <!-- ============================================================== -->
         <!-- Sidebar - style you can find in sidebar.scss -->
         <!-- ============================================================== -->
         <!-- ============================================================== -->
         <!-- Right Sidebar - style you can find in rightsidebar.component.scss -->
         <!-- ============================================================== -->
-        <mat-sidenav #end position="end" class="chat-panel" mode="over" opened="false">
+        <!-- <mat-sidenav #end position="end" class="chat-panel" mode="over" opened="false">
             <div class="scroll">
                 <mat-nav-list>
 
@@ -90,11 +90,11 @@
                     </mat-list-item>
                     <mat-list-item>
                         <mat-slide-toggle color="warn" [(ngModel)]="boxed">Boxed Layout</mat-slide-toggle>
-                    </mat-list-item>
+                    </mat-list-item> -->
                     <!--<mat-list-item>
                     <mat-slide-toggle [(ngModel)]="minisidebar">Mini Sidebar</mat-slide-toggle>
                   </mat-list-item>    -->
-                    <mat-divider></mat-divider>
+                    <!-- <mat-divider></mat-divider>
                     <h3 mat-subheader class="text-uppercase font-weight-bold">Colors</h3>
                     <mat-list-item>
                         <mat-checkbox color="warn" [(ngModel)]="danger" (change)="green = blue = false" class="text-danger">Red</mat-checkbox>
@@ -110,7 +110,7 @@
                     </mat-list-item>
                 </mat-nav-list>
             </div>
-        </mat-sidenav>
+        </mat-sidenav> -->
 
         <!-- ============================================================== -->
         <!-- Page container - style you can find in pages.scss -->

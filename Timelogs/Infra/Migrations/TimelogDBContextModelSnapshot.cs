@@ -71,6 +71,28 @@ namespace Infra.Migrations
                     b.ToTable("Timelog");
                 });
 
+            modelBuilder.Entity("Domain.Models.TimelogSummary", b =>
+                {
+                    b.Property<Guid>("TimelogSummaryID")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("Department");
+
+                    b.Property<string>("FirstName");
+
+                    b.Property<string>("LastName");
+
+                    b.Property<string>("MiddleName");
+
+                    b.Property<string>("State");
+
+                    b.Property<DateTime>("Time");
+
+                    b.HasKey("TimelogSummaryID");
+
+                    b.ToTable("TimelogSummary");
+                });
+
             modelBuilder.Entity("Domain.Models.Employees", b =>
                 {
                     b.HasOne("Domain.Models.Departments", "Department")
