@@ -4,15 +4,53 @@
 </div>
 <mat-divider class="m-t-15 m-b-15"></mat-divider>
 
+<!--MAVS WAG MO BUBURAHIN TO-->
 
-<form class="basic-form">
-  <div fxLayout="row" fxLayoutWrap="wrap" fxLayoutAlign="space-around">
+<!-- <form [formGroup]="employeeLogsForm">
+  <div fxLayout="row" fxLayoutWrap="wrap" fxLayoutAlign="space-between">
     <div fxFlex.gt-md="30" fxFlex="30" m-r-15>
       <mat-form-field>
-        <mat-select placeholder="Department">
-          <mat-option value="all">All</mat-option>
-          <mat-option value="pmo">PMO</mat-option>
-          <mat-option value="tmg">TMG</mat-option>
+        <mat-select placeholder="Select Department" formControlName="departmentName">
+          <mat-option *ngFor="let department of departmentList" [value]="department.departmentID">
+            {{department.departmentName}}
+          </mat-option>
+        </mat-select>
+    </mat-form-field>    
+    </div>
+
+    <div fxFlex.gt-md="30" fxFlex="30" m-r-15>
+      <mat-form-field>
+        <input matInput [matDatepicker]="fromDate" placeholder="From:">
+        <mat-datepicker-toggle matSuffix [for]="fromDate"></mat-datepicker-toggle>
+        <mat-datepicker #fromDate></mat-datepicker>
+      </mat-form-field>
+    </div>
+
+    <div fxFlex.gt-md="30" fxFlex="30" m-r-15>
+      <button class="m-0" type="button"  mat-raised-button (click)="searchEmployeeLogs()">Show</button>
+    </div>
+  </div>
+
+
+  <div fxLayout="row" fxLayoutWrap="wrap" fxLayoutAlign="space-between">
+    <div fxFlex.gt-md="30" fxFlex="30" m-r-15>
+      <mat-form-field>
+        <input matInput placeholder="Search:" formControlName="fullName">
+      </mat-form-field>
+    </div>
+  </div>
+</form> -->
+
+<!--MAVS WAG MO BUBURAHIN TO-->
+
+<form CLASS="BASIC-FORM">
+  <div fxLayout="row" fxLayoutWrap="wrap" fxLayoutAlign="space-between">
+    <div fxFlex.gt-md="30" fxFlex="30" m-r-15>
+      <mat-form-field>
+        <mat-select placeholder="Select Department">
+          <mat-option *ngFor="let department of departmentList" [value]="department.departmentID">
+            {{department.departmentName}}
+          </mat-option>
         </mat-select>
       </mat-form-field>
     </div>
@@ -26,12 +64,12 @@
     </div>
 
     <div fxFlex.gt-md="30" fxFlex="30" m-r-15>
-      <button class="m-0" type="button"  mat-raised-button (click)="timelogDialog()">Show</button>
+      <button class="m-0" type="button" mat-raised-button (click)="searchEmployeeLogs()">Show</button>
     </div>
   </div>
 
 
-  <div fxLayout="row" fxLayoutWrap="wrap" fxLayoutAlign="space-around">
+  <div fxLayout="row" fxLayoutWrap="wrap" fxLayoutAlign="space-between">
     <div fxFlex.gt-md="30" fxFlex="30" m-r-15>
       <mat-form-field>
         <input matInput placeholder="Search:">
@@ -47,49 +85,48 @@
     </div>
 
     <div fxFlex.gt-md="30" fxFlex="30" m-r-15>
-      <button class="m-0" type="button"  mat-raised-button>Export to PDF</button>
+      <button class="m-0" type="button" mat-raised-button (click)="convertToPDF()">Export to PDF</button>
     </div>
   </div>
 </form>
-
 
 <div fxLayout="row" fxLayoutWrap="wrap">
   <div fxFlex.gt-sm="100" fxFlex.gt-xs="100" fxFlex="100">
     <mat-card>
       <mat-card-content>
-        <div class="table-rasponsive">
-          <mat-table [dataSource]="dataSource" matSort>
+        <div  class="table-rasponsive">
+          <mat-table id="contentToConvert" [dataSource]="dataSource" matSort>
 
-            <!-- Name Column -->
+
             <ng-container matColumnDef="name">
-              <mat-header-cell *matHeaderCellDef> Name </mat-header-cell>
-              <mat-cell *matCellDef="let row"> {{ Emplloyee?.fullName }} </mat-cell>
+              <mat-header-cell *matHeaderCellDef mat-sort-header> Name </mat-header-cell>
+              <mat-cell *matCellDef="let Employee" (click)="timelogDialog(Employee.employeeID)"> {{Employee.fullName}} </mat-cell>
             </ng-container>
 
-            <!-- Hours Rendered Column -->
+
             <ng-container matColumnDef="hoursRendered">
-              <mat-header-cell *matHeaderCellDef> Hours Rendered </mat-header-cell>
-              <mat-cell *matCellDef="let row"> {{ Timelog?.time | date:'h:mm:ss a' }} </mat-cell>
+              <mat-header-cell *matHeaderCellDef mat-sort-header> Hours Rendered </mat-header-cell>
+              <mat-cell *matCellDef="let row" (click)="timelogDialog(Employee.employeeID)"> 139 of 176 HRS </mat-cell>
             </ng-container>
 
-            <!-- Unreported Hours Column -->
+
             <ng-container matColumnDef="unreportedHours">
-              <mat-header-cell *matHeaderCellDef> Unreported Hours </mat-header-cell>
-              <mat-cell *matCellDef="let row"> {{ Employee?.firstName }} </mat-cell>
+              <mat-header-cell *matHeaderCellDef mat-sort-header> Unreported Hours </mat-header-cell>
+              <mat-cell *matCellDef="let row" (click)="timelogDialog(Employee.employeeID)"> 37 Hours </mat-cell>
             </ng-container>
 
-            <!-- Department Column -->
+            <!-- Gain /month Column -->
             <ng-container matColumnDef="department">
-              <mat-header-cell *matHeaderCellDef> Department </mat-header-cell>
-              <mat-cell *matCellDef="let row"> {{ Department?.departmentName }} </mat-cell>
+              <mat-header-cell *matHeaderCellDef mat-sort-header> Department </mat-header-cell>
+              <mat-cell *matCellDef="let Employee" (click)="timelogDialog(Employee.employeeID)"> {{Employee.departmentName}} </mat-cell>
             </ng-container>
 
             <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
             <mat-row *matRowDef="let row; columns: displayedColumns;">
             </mat-row>
           </mat-table>
-
-          <!-- <mat-paginator [pageSizeOptions]="[30, 40]"></mat-paginator> -->
+          <mat-paginator #paginator [pageSize]="30" [pageSizeOptions]="[10, 20, 30]">
+          </mat-paginator>
         </div>
       </mat-card-content>
     </mat-card>

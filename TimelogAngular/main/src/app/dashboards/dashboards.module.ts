@@ -7,6 +7,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { DashboardsRoutes } from './dashboards.routing';
 import { ChartistModule } from 'ng-chartist';
 import { ChartsModule } from 'ng2-charts';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { Dashboard1Component } from './dashboard1/dashboard1.component';
 import { Dashboard2Component } from './dashboard2/dashboard2.component';
@@ -21,6 +22,8 @@ import { TimelogSummaryDetailsComponent } from './timelog-summary/timelog-summar
     FlexLayoutModule,
     ChartistModule,
     ChartsModule,
+    FormsModule,
+    ReactiveFormsModule,
     RouterModule.forChild(DashboardsRoutes)
   ],
   providers: [],

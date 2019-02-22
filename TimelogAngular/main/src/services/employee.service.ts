@@ -1,10 +1,17 @@
 import { Injectable } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
 import { Employee } from "../domain/employee";
+import { PaginationResult } from "../domain/paginationresult";
 
 @Injectable()
 export class EmployeeService {
     constructor(private http: HttpClient) {} 
+
+    getEmployeewithPagination(page: number, itemsPerPage: number, filter: string) {
+        return this.http.get("https://localhost:44313/api/Holidays" + page + "/" + itemsPerPage + "?filter=" + filter)
+            .toPromise()
+            .then(data => { return data as PaginationResult<Employee> })
+    }
 
     getEmployee() {
         return this.http.get("https://localhost:5001/api/Employee")

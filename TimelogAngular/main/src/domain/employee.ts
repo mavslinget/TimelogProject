@@ -5,5 +5,5 @@ export interface Employee {
     middleName: string;
     // // fullName: any;
     departmentID: any;
-    // departmentName: string;
+    departmentName: string;
 }
